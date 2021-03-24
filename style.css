@@ -1,0 +1,58 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.mapDiv{
+    height:640px;
+}
+.screenSize{
+    position: relative;
+    width:1000px;
+    margin: auto;
+}
+.myContacts {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 40px;
+	position: absolute;
+
+	border-radius: 20px;
+	box-shadow: 0px 2px 15px rgba(0,0,0, .2);
+	background-color: #fff;
+	right: 0;
+	top: -640pxbox-sizing: border-box;
+	top: -550px;	
+}
+
+.myContacts a {
+    text-decoration: none;
+}
+.contact-btn {
+    padding:15px;
+    border-radius: 5px;
+    border:none;
+    width:130px;
+    color:#fff;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.telegram {
+    background-color: #0088CC;
+    margin-right: 20px;
+}
+.viber {
+    background-color: #666CAC;
+}
+.contact-btn a{
+    color:#fff
+}
+.mainPhone {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.mainPhone span {
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+}
