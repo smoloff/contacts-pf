@@ -12,36 +12,58 @@ body{
 .myContacts {
 	display: flex;
 	flex-direction: column;
-	padding: 0px 40px;
+    gap:20px;
+	padding: 20px 40px;
 	position: absolute;
-
 	border-radius: 20px;
 	box-shadow: 0px 2px 15px rgba(0,0,0, .2);
 	background-color: #fff;
 	right: 0;
-	top: -640pxbox-sizing: border-box;
+	box-sizing: content-box;
 	top: -550px;	
+}
+.myContacts > div {
+    margin: 0px;
+    padding: 0px;
+}
+.myContacts > div > p{
+    padding: 0px;
+    margin: 0px;
 }
 
 .myContacts a {
     text-decoration: none;
 }
 .contact-btn {
-    padding:15px;
-    border-radius: 5px;
-    border:none;
-    width:130px;
-    color:#fff;
-    font-size: 15px;
-    cursor: pointer;
-
+	padding: 10px 12px;
+	border-radius: 10px;
+	border: none;
+	width: 130px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+    font-weight: normal;
+    /* box-shadow: 0px 3px 7px rgba(0,0,0, .15); */
+    /* border:1px solid rgba(0,0,255, .2); */
+    /* border:1px solid gray; */
+    transition: 0.3s ease;
+}
+.contact-btn:hover{
+    box-shadow: 0px 4px 12px rgba(0,0,0, .25);
 }
 .telegram {
-    background-color: #0088CC;
-    margin-right: 20px;
+    background: url(https://paperfox.com.ua/wp-content/uploads/2021/03/lelegram_logo.png) center left no-repeat;	
+   
+    background-color: #26a5e4;
+    background-size: 22px 22px;
+	background-position-x: 7px;
+    
 }
 .viber {
-    background-color: #666CAC;
+    background: url(https://paperfox.com.ua/wp-content/uploads/2021/03/viber_logo-1.png) center left no-repeat;	
+    background-color: #864b99;;
+    background-size: 18px 18px;
+	background-position-x: 10px;
 }
 .contact-btn a{
     color:#fff
@@ -50,9 +72,28 @@ body{
     font-size: 30px;
     font-weight: bold;
     line-height: 22px;
+    /* margin:10px 0px; */
 }
 .mainPhone span {
     font-size: 14px;
     color: gray;
     font-weight: 400;
+}
+
+.messenger-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .myContacts{
+        top:0;
+        width:200px;
+        left:0;
+    }
+
 }
